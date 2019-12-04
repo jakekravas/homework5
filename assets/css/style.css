@@ -1,0 +1,36 @@
+.jumbotron{
+    background-color: transparent;
+    font-weight: 500;
+    border-bottom: 10px solid black;
+}
+
+.left-column{
+    border-top: 1px dashed black;
+    text-align: right;
+}
+
+.middle-column-morning{
+    background: rgb(185, 185, 185);
+}
+
+.middle-column-noon{
+    background: rgb(238, 9, 9);
+}
+
+.middle-column-afternoon{
+    background: green;
+}
+
+.right-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(75, 75, 255);
+    border-radius: 0 10px 10px 0;
+    /* height: 100px; */
+}
+
+.save-btn{
+    background: transparent;
+    border: none;
+}
