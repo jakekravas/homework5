@@ -30,7 +30,12 @@
     /* height: 100px; */
 }
 
-.save-btn{
+button{
     background: transparent;
+    color: #f6f6f6;
     border: none;
+}
+
+button:hover{
+    color: rgb(29, 29, 121);
 }
