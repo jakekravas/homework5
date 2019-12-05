@@ -1,4 +1,17 @@
+displayDate();
 getLocalStorageText();
+
+function displayDate(){
+    let x = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let year = x.getFullYear();
+    let month = months[x.getMonth()];
+    let date = x.getDate();
+    let day = days[x.getDay()];
+    let today = day + ", " + month + " " + date + ", " + year;
+    $("#today").text(today);
+}
 
 $("#9am-btn").on("click", function(){
     let nineText = $("#9am-text").val();
@@ -61,6 +74,7 @@ $("#5pm-btn").on("click", function(){
     // Setting the value of "5PM Text" to fiveText
     localStorage.setItem("5PM Text", fiveText);
 });
+
 
 function getLocalStorageText(){
     let savedNineText = localStorage.getItem("9AM Text");
