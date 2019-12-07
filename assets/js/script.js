@@ -2,13 +2,13 @@ displayDate();
 getLocalStorageText();
 
 function displayDate(){
-    let x = new Date();
+    let dateObj = new Date();
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let year = x.getFullYear();
-    let month = months[x.getMonth()];
-    let date = x.getDate();
-    let day = days[x.getDay()];
+    let year = dateObj.getFullYear();
+    let month = months[dateObj.getMonth()];
+    let date = dateObj.getDate();
+    let day = days[dateObj.getDay()];
     let today = day + ", " + month + " " + date + ", " + year;
     $("#today").text(today);
 }

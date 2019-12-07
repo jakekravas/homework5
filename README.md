@@ -1,1 +1,1 @@
-# homework5
+My goal for this project was to create a work day scheduler that allows users to add, edit, and delete tasks for each hour of the work day. They can save their task by clicking on the save button to the right of the text area, and when they come back to the page later it will still be there until they choose to delete it. The date in the header will also automatically update each day. I used HTML, CSS, Bootstrap, JavaScript, and JQuery to create this project.
