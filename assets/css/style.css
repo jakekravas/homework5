@@ -9,18 +9,6 @@
     text-align: center;
 }
 
-.middle-column-morning{
-    background: rgb(185, 185, 185);
-}
-
-.middle-column-noon{
-    background: rgb(238, 9, 9);
-}
-
-.middle-column-afternoon{
-    background: green;
-}
-
 .right-column{
     display: flex;
     justify-content: center;

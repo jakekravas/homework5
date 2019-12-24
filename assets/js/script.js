@@ -1,4 +1,5 @@
 displayDate();
+colorCodeBlocks();
 getLocalStorageText();
 
 // Calculating date through JS Date object
@@ -12,6 +13,124 @@ function displayDate(){
     let day = days[dateObj.getDay()];
     let today = day + ", " + month + " " + date + ", " + year;
     $("#today").text(today);
+}
+
+function colorCodeBlocks(){
+    let hour = new Date().getHours();
+    console.log(hour);
+
+    if (hour < 9){
+        $("#9am-text").css("background", "green");
+        $("#10am-text").css("background", "green");
+        $("#11am-text").css("background", "green");
+        $("#12pm-text").css("background", "green");
+        $("#1pm-text").css("background", "green");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 9){
+        $("#9am-text").css("background", "rgb(238, 9, 9)");
+        $("#10am-text").css("background", "green");
+        $("#11am-text").css("background", "green");
+        $("#12pm-text").css("background", "green");
+        $("#1pm-text").css("background", "green");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 10){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(238, 9, 9)");
+        $("#11am-text").css("background", "green");
+        $("#12pm-text").css("background", "green");
+        $("#1pm-text").css("background", "green");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 11){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(238, 9, 9)");
+        $("#12pm-text").css("background", "green");
+        $("#1pm-text").css("background", "green");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 12){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(238, 9, 9)");
+        $("#1pm-text").css("background", "green");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 13){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(238, 9, 9)");
+        $("#2pm-text").css("background", "green");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 14){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(185, 185, 185)");
+        $("#2pm-text").css("background", "rgb(238, 9, 9)");
+        $("#3pm-text").css("background", "green");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 15){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(185, 185, 185)");
+        $("#2pm-text").css("background", "rgb(185, 185, 185)");
+        $("#3pm-text").css("background", "rgb(238, 9, 9)");
+        $("#4pm-text").css("background", "green");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 16){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(185, 185, 185)");
+        $("#2pm-text").css("background", "rgb(185, 185, 185)");
+        $("#3pm-text").css("background", "rgb(185, 185, 185)");
+        $("#4pm-text").css("background", "rgb(238, 9, 9)");
+        $("#5pm-text").css("background", "green");
+    } else if (hour == 17){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(185, 185, 185)");
+        $("#2pm-text").css("background", "rgb(185, 185, 185)");
+        $("#3pm-text").css("background", "rgb(185, 185, 185)");
+        $("#4pm-text").css("background", "rgb(185, 185, 185)");
+        $("#5pm-text").css("background", "rgb(238, 9, 9)");
+    } else if (hour > 17){
+        $("#9am-text").css("background", "rgb(185, 185, 185)");
+        $("#10am-text").css("background", "rgb(185, 185, 185)");
+        $("#11am-text").css("background", "rgb(185, 185, 185)");
+        $("#12pm-text").css("background", "rgb(185, 185, 185)");
+        $("#1pm-text").css("background", "rgb(185, 185, 185)");
+        $("#2pm-text").css("background", "rgb(185, 185, 185)");
+        $("#3pm-text").css("background", "rgb(185, 185, 185)");
+        $("#4pm-text").css("background", "rgb(185, 185, 185)");
+        $("#5pm-text").css("background", "rgb(185, 185, 185)");
+    }
+
 }
 
 // Establishing event listeners
